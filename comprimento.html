@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/comprimento.css">
+    <title>Conversor de Comprimento</title>
+   
+</head>
+<body>
+    <h1>Conversor de Comprimento</h1>
+    <label for="fromLength">De:</label>
+    <select id="fromLength">
+        <option value="metros">Metros</option>
+        <option value="centímetros">Centímetros</option>
+        <option value="milímetros">Milímetros</option>
+        <option value="polegadas">Polegadas</option>
+    </select>
+    <input type="number" id="lengthValue" placeholder="Valor">
+    <button onclick="convertLength()">Converter</button>
+    <br><br>
+    <label for="toLength">Para:</label>
+    <select id="toLength">
+        <option value="metros">Metros</option>
+        <option value="centímetros">Centímetros</option>
+        <option value="milímetros">Milímetros</option>
+        <option value="polegadas">Polegadas</option>
+    </select>
+    <br><br>
+    <label for="lengthResult">Resultado:</label>
+    <input type="text" id="lengthResult" readonly> 
+    <br>
+    <br>
+    <button class="button"><a href="index.html">Voltar</a></button>
+    <script src="./js/comprimento.js"></script>
+</body>
+</html>

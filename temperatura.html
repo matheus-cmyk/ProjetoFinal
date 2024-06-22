@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/temperatura.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversor de Temperatura</h1>
+    <div>
+        <label for="de-temperatura">De:</label>
+        <select id="de-temperatura">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <label for="valor-temperatura">Valor:</label>
+        <input type="number" id="valor-temperatura">
+        <button onclick="converterTemperatura()">Converter</button>
+    </div>
+    <div class="resultado-box">
+        <label for="para-temperatura">Para:</label>
+        <select id="para-temperatura">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+    </div>
+    <div class="resultado-box">
+        <label>Resultado:</label>
+        <textarea id="resultado-temperatura" readonly></textarea>
+    </div>
+    <br>
+    <br>
+    <button class="button"><a href="index.html">Voltar</a></button>
+    <script src="./js/temperatura.js"></script>
+</body>
+</html>

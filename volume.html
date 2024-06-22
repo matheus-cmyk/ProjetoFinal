@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/volume.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversor de Volume</h1>
+    <div>
+        <label for="de-volume">De:</label>
+        <select id="de-volume">
+            <option value="litros">Litros</option>
+            <option value="mililitros">Mililitros</option>
+            <option value="galoes">Galões</option>
+        </select>
+        <label for="valor-volume">Valor:</label>
+        <input type="number" id="valor-volume">
+        <button onclick="converterVolume()">Converter</button>
+    </div>
+    <div class="resultado-box">
+        <label for="para-volume">Para:</label>
+        <select id="para-volume">
+            <option value="litros">Litros</option>
+            <option value="mililitros">Mililitros</option>
+            <option value="galoes">Galões</option>
+        </select>
+    </div>
+    <div class="resultado-box">
+        <label>Resultado:</label>
+        <textarea id="resultado-volume" readonly></textarea>
+    </div>
+    <br>
+    <br>
+    <button class="button"><a href="index.html">Voltar</a></button>
+    <script src="./js/volume.js"></script>
+</body>
+</html>
